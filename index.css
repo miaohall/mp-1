@@ -23,7 +23,7 @@ header{
 
 main {
     width: 70%;
-    height: 125vh;
+    height: 100vh;
     text-align: center;
     font-size: calc(2px + 1.5vw);
     background-color: #e7eaf6;
@@ -31,7 +31,7 @@ main {
 
 main img {
     max-width: 35%;
-    max-height: 40%;
+    max-height: 50%;
 }
 
 main h3{
@@ -59,13 +59,13 @@ nav li{
     background-color: #38598b;
     margin: 5% auto;
     width: 80%;
-    padding: 1%;
+    padding: 3%;
     text-align: center;
 }
 
 nav a{
     color: #e7eaf6;
-    font-size: calc(2px + 1.5vw);
+    font-size: calc(2px + 1.7vw);
     text-decoration: none;
 }
 
@@ -73,7 +73,20 @@ footer {
     width: 100%;
     background-color: #38598b;
     color: white;
+    padding: 1.1%;
 }
+
+/*calc buttons*/
+button {
+    background-color: #38598b;
+    color: white;
+}
+
+/*experience page*/
+.experience-bullets {
+    font-size: calc(2px + 1vw);
+    text-align: left;
+  }
 
 @media  screen and (max-width: 1000px) {
     #nav-main {

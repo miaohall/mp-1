@@ -67,7 +67,7 @@ function printResult(r) {
         output.style.color = "red";
     }
     else {
-        output.style.color = "#113f67";
+        output.style.color = "black";
     }
     output.innerHTML = String(r);
 }
