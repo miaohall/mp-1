@@ -1,3 +1,4 @@
+/*i like this color darkseagreen - use somewhere*/
 *{
     margin: 0;
     box-sizing: border-box;
@@ -8,6 +9,12 @@
     margin: auto;
 }
 
+header{
+    padding: 1%;
+    background-color: #38598b;
+    color: white;
+}
+
 #nav-main{
     width: 100%;
     display: flex;
@@ -16,9 +23,19 @@
 
 main {
     width: 70%;
-    height: 100vh;
+    height: 125vh;
     text-align: center;
     font-size: calc(2px + 1.5vw);
+    background-color: #e7eaf6;
+}
+
+main img {
+    max-width: 35%;
+    max-height: 40%;
+}
+
+main h3{
+    color: #113f67;
 }
 
 main *{
@@ -27,18 +44,19 @@ main *{
 
 nav{
     width: 30%;
-    background-color: cornflowerblue;
+    background-color:#a2a8d3;
 }
 
 nav ul{
     padding-left: 0;
     list-style: none;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 nav li{
-    border: 3px solid darkseagreen;
+    background-color: #38598b;
     margin: 5% auto;
     width: 80%;
     padding: 1%;
@@ -46,7 +64,37 @@ nav li{
 }
 
 nav a{
-    color: azure;
+    color: #e7eaf6;
     font-size: calc(2px + 1.5vw);
     text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    background-color: #38598b;
+    color: white;
+}
+
+@media  screen and (max-width: 1000px) {
+    #nav-main {
+        flex-direction: column;
+    }
+
+    nav, main{
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    main{
+        height: 100vh;
+    }
 }
