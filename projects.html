@@ -6,54 +6,57 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 <body>
+<div id="page-wrapper">
 <header>
     <h1>Mia O'Halloran</h1>
     <p>My Online Resume</p>
 </header>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="experiences.html">Experiences</a></li>
-        <li><a href="volunteer-work.html">Volunteer Work</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-    </ul>
-</nav>
-<main>
 
-    <h3>Predicting Phishing Scams Based on URL Features</h3>
-    <p>In this project my teammates and I developed a Python based analysis using machine learning algorithms. We used K Nearest Neighbors and Random Forest classification models with Scikit-Learn to classify URLs as phishing or non-phishing.
-    We conducted statistical analyses, such as t-tests and correlation studies using Matplotlib, SciPy, and NumPy. We created visualizations including feature importance plots, box plots, scatter plots, and histograms using Matplotlib, NumPy and Seaborn.
-    </p>
+    <div id="nav-main">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="volunteer-work.html">Volunteer Work</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+            </ul>
+        </nav>
+        <main id="main">
 
-    <!--Calc section here-->
-    <h3>Calculator</h3>
-    <script src="calc.js"></script>
+            <h3>Predicting Phishing Scams Based on URL Features</h3>
+            <p>In this project my teammates and I developed a Python based analysis using machine learning algorithms. We used K Nearest Neighbors and Random Forest classification models with Scikit-Learn to classify URLs as phishing or non-phishing.
+            We conducted statistical analyses, such as t-tests and correlation studies using Matplotlib, SciPy, and NumPy. We created visualizations including feature importance plots, box plots, scatter plots, and histograms using Matplotlib, NumPy and Seaborn.
+            </p>
 
-    <label for="first-number">Enter First Number:</label>
-    <input type="text" id="first-number">
-    <label for="second-number">Enter Second Number:</label>
-    <input type="text" id="second-number">
+            <!--Calc section here-->
+            <h3>Calculator</h3>
+            <script src="calc.js"></script>
 
-    <br>
-    <button onclick="addition()">+</button>
-    <button onclick="minus()">-</button>
-    <button onclick="multiply()">*</button>
-    <button onclick="divide()">/</button>
-    <button onclick="power()">**</button>
-    <button onclick="reset()">Clear</button>
+            <label for="first-number">Enter First Number:</label>
+            <input type="text" id="first-number">
+            <label for="second-number">Enter Second Number:</label>
+            <input type="text" id="second-number">
 
-    <br>
-    <h3 id="output"></h3>
+            <br>
+            <button onclick="addition()">+</button>
+            <button onclick="minus()">-</button>
+            <button onclick="multiply()">*</button>
+            <button onclick="divide()">/</button>
+            <button onclick="power()">**</button>
+            <button onclick="reset()">Clear</button>
 
+            <br>
+            <h3 id="output"></h3>
 
+        </main>
+    </div>
 
-</main>
+    <footer>
+        <p> All rights reserved &#169;</p>
+    </footer>
 
-
-<footer>
-    <p> All rights reserved &#169;</p>
-</footer>
+</div>
 </body>
 </html>
