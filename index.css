@@ -115,7 +115,7 @@ footer {
 
 /*Projects page*/
 .proj-descript {
-    font-size: calc(2px + 1.2vw);
+    font-size: calc(2px + 1.1vw);
     padding-bottom: 2.5%;
 }
 
@@ -135,13 +135,17 @@ footer {
     color: #38598b;
 }
 
+#calc-part {
+    padding-top: 2%;
+}
+
 /*calc buttons*/
 button {
     background-color: #a2a8d3;
     font-size: calc(2px + 1.5vw);
     color: white;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     padding-left: 3%;
     padding-right: 3%;
     text-align: center;
@@ -222,6 +226,6 @@ button:hover {
     }
 
     main{
-        height: 100vh;
+        height: 90vh;
     }
 }
