@@ -2,6 +2,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 #page-wrapper{
@@ -13,6 +14,7 @@ header{
     padding: 1%;
     background-color: #38598b;
     color: white;
+    text-shadow: 1px 1px #a2a8d3;
 }
 
 #nav-main{
@@ -44,7 +46,7 @@ main *{
 
 nav{
     width: 30%;
-    background-color:#a2a8d3;
+    background-image: linear-gradient(to top, #38598b, #a2a8d3, #e7eaf6);
 }
 
 nav ul{
@@ -59,8 +61,9 @@ nav li{
     background-color: #38598b;
     margin: 5% auto;
     width: 80%;
-    padding: 3%;
+    padding: 4%;
     text-align: center;
+    border-radius: 20px;
 }
 
 nav a{
@@ -73,7 +76,6 @@ footer {
     width: 100%;
     background-color: #38598b;
     color: white;
-    padding: 1.1%;
 }
 
 /*calc buttons*/
@@ -83,10 +85,27 @@ button {
 }
 
 /*experience page*/
-.experience-bullets {
-    font-size: calc(2px + 1vw);
+#experience-content {
+    padding-top: 1%;
     text-align: left;
   }
+
+.company {
+    font-size: calc(2px + 1.2vw);
+    font-weight: bold;
+    color: #113f67;
+}
+
+.role {
+    font-size: calc(2px + 1vw);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.experience-bullets {
+    font-size: calc(2px + 0.9vw);
+}
+
 
 @media  screen and (max-width: 1000px) {
     #nav-main {
