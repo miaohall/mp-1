@@ -1,4 +1,4 @@
-/*i like this color darkseagreen - use somewhere*/
+/*note: hover feature not covered in class, but learned via w3 schools*/
 *{
     margin: 0;
     box-sizing: border-box;
@@ -38,12 +38,19 @@ main img {
 
 main h3{
     color: #113f67;
+    font-variant: small-caps;
+}
+
+/*home page message*/
+#welcome {
+    font-variant: normal;
 }
 
 main *{
     margin: 2%;
 }
 
+/* nav bar styling*/
 nav{
     width: 30%;
     background-image: linear-gradient(to top, #38598b, #a2a8d3, #e7eaf6);
@@ -72,28 +79,115 @@ nav a{
     text-decoration: none;
 }
 
+/*hover nav bar*/
+nav li:hover {
+    background-color: #a2a8d3;
+    margin: 5% auto;
+    width: 80%;
+    padding: 4%;
+    text-align: center;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #38598b;
+}
+
+nav a:hover{
+    color: #38598b;
+    font-size: calc(2px + 1.7vw);
+    text-decoration: none;
+}
+
+h4 {
+    color: #38598b;
+}
+
 footer {
     width: 100%;
     background-color: #38598b;
     color: white;
 }
 
+/*content on internal pages*/
+#content {
+    padding-top: 0.2%;
+    text-align: left;
+}
+
+/*Projects page*/
+.proj-descript {
+    font-size: calc(2px + 1.2vw);
+    padding-bottom: 2.5%;
+}
+
+#proj-button {
+    background-color: #a2a8d3;
+    font-size: calc(2px + 1.3vw);
+    color: #38598b;
+    padding: 1.7%;
+    border-style: solid;
+    border-color: #113f67;
+    border-radius: 20px;
+}
+
+#proj-button:hover {
+    background-color: #e7eaf6;
+    border-color: #38598b;
+    color: #38598b;
+}
+
 /*calc buttons*/
 button {
-    background-color: #38598b;
+    background-color: #a2a8d3;
+    font-size: calc(2px + 1.5vw);
     color: white;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+    border-radius: 20px;
+    border-color: #38598b;
+    border-style: dotted;
+    border-width: thick;
+}
+
+button:hover {
+    background-color: #e7eaf6;
+    color: #38598b;
+    border-color: #38598b;
+    border-width: thick;
+}
+
+#clear-button {
+    background-color: #38598b;
+    border-color: #a2a8d3;
+    border-width: thick;
+    border-style: solid;
+}
+
+#clear-button:hover {
+    background-color: #e7eaf6;
+    color: #38598b;
+    border-color: #38598b;
+    border-width: thick;
+}
+
+/*education page*/
+.school {
+    color: #38598b;
+    font-weight: bold;
+    font-size: calc(2px + 1.6vw);
+}
+
+.edu_subtext {
+    font-size: calc(2px + 1.3vw);
 }
 
 /*experience page*/
-#experience-content {
-    padding-top: 1%;
-    text-align: left;
-  }
-
 .company {
     font-size: calc(2px + 1.2vw);
     font-weight: bold;
-    color: #113f67;
+    color: #38598b;
 }
 
 .role {
@@ -120,6 +214,7 @@ button {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        width: 70%;
     }
 
     header{

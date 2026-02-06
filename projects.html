@@ -24,32 +24,38 @@
             </ul>
         </nav>
         <main id="main">
+            <div id="content">
+                <h3>Projects</h3>
+                <h4>Predicting Phishing Scams Based on URL Features</h4>
+                <h5>Spring 2024</h5>
+                <p class = "proj-descript">This project is a Python analysis of whether a phishing scam can be detected by it's URL contents.
+                    It utilized supervised machine learning techniques (K Nearest Neighbors and Random Forest classification models) with Scikit-Learn, to classify URLs as phishing or non-phishing based on certain features, including URL parameters, path level, and security protocol.
+                    We conducted statistical analyses, such as t-tests and correlation studies using Matplotlib, SciPy, and NumPy.
+                    We created visualizations including feature importance plots, bar charts, box plots, scatter plots, and histograms using Matplotlib, NumPy and Seaborn.</p>
 
-            <h3>Predicting Phishing Scams Based on URL Features</h3>
-            <p>In this project my teammates and I developed a Python based analysis using machine learning algorithms. We used K Nearest Neighbors and Random Forest classification models with Scikit-Learn to classify URLs as phishing or non-phishing.
-            We conducted statistical analyses, such as t-tests and correlation studies using Matplotlib, SciPy, and NumPy. We created visualizations including feature importance plots, box plots, scatter plots, and histograms using Matplotlib, NumPy and Seaborn.
-            </p>
-
-            <!--Calc section here-->
-            <h3>Calculator</h3>
-            <script src="calc.js"></script>
-
-            <label for="first-number">First Number:</label>
-            <input type="text" id="first-number">
-            <label for="second-number">Second Number:</label>
-            <input type="text" id="second-number">
-
+                <a href="https://github.com/miaohall/Phishing-URL-Scam-Detector-Analysis.git" id="proj-button">Check it out here!</a>
+            </div>
             <br>
-            <button onclick="addition()">+</button>
-            <button onclick="minus()">-</button>
-            <button onclick="multiply()">*</button>
-            <button onclick="divide()">/</button>
-            <button onclick="power()">**</button>
-            <button onclick="reset()">Clear</button>
 
-            <br>
-            <h3 id="output"></h3>
+                <!--Calc section here-->
+                <h4>Calculator</h4>
+                <script src="calc.js"></script>
 
+                <label for="first-number">First Number:</label>
+                <input type="text" id="first-number">
+                <label for="second-number">Second Number:</label>
+                <input type="text" id="second-number">
+
+                <br>
+                <button onclick="addition()">+</button>
+                <button onclick="minus()">-</button>
+                <button onclick="multiply()">*</button>
+                <button onclick="divide()">/</button>
+                <button onclick="power()">**</button>
+                <button id="clear-button" onclick="reset()">Clear</button>
+
+                <br>
+                <h3 id="output"></h3>
         </main>
     </div>
 
